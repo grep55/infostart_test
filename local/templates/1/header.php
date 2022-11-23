@@ -19,12 +19,6 @@
 
 </div>
 
-
-
-
 	<!-- SOCIALNETWORK -->
-
-
-
-        <h1 id="pagetitle"><?$APPLICATION->ShowTitle(false)?></h1>
+    <h1 id="pagetitle"><?$APPLICATION->ShowTitle(false)?></h1>
       

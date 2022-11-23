@@ -10,10 +10,10 @@ $component = $this->getComponent();
 $this->setFrameMode(true);
 
 $colorSchemes = array(
-	"green" => "bx-green",
-	"yellow" => "bx-yellow",
-	"red" => "bx-red",
-	"blue" => "bx-blue",
+	"green" => "bg-success",
+	"yellow" => "bg-warning",
+	"red" => "bg-danger",
+	"blue" => "bg-primary",
 );
 if(isset($colorSchemes[$arParams["TEMPLATE_THEME"]]))
 {

@@ -1,6 +1,11 @@
 $( document ).ready(function() {
 
-
+    //Валидация телефона
+    function validatePhone(phone){
+        let regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+        return regex.test(phone);
+    }
+    
 	function GetURLParameter(sParam)
 	{
 		var sPageURL = window.location.search.substring(1);
@@ -52,6 +57,7 @@ $( document ).ready(function() {
 			form.classList.add('was-validated');
 		  }, false);
 		});
+        
 	  }, false);
 	})();
 
@@ -67,7 +73,7 @@ $( document ).ready(function() {
 			var user_tel = $('#InputTel').val();
 
 			// Проверяем данные на заполненость
-			if( user_fio && user_email && user_question ){
+			if( user_fio && user_email && user_question && validatePhone(user_tel)){
 
 				$.ajax({
 					type: "POST", // Метод отправки
