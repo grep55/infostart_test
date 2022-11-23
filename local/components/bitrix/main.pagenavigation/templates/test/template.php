@@ -106,13 +106,7 @@ else
 	<?endif?>
 <?endif?>
 
-<?if ($arResult["SHOW_ALL"]):?>
-	<?if ($arResult["ALL_RECORDS"]):?>
-			<li class="bx-pag-all"><a class="page-link"  href="<?=htmlspecialcharsbx($arResult["URL"])?>" rel="nofollow"><span><?echo GetMessage("round_nav_pages")?></span></a></li>
-	<?else:?>
-			<li class="bx-pag-all"><a class="page-link"  href="<?=htmlspecialcharsbx($component->replaceUrlTemplate("all"))?>" rel="nofollow"><span><?echo GetMessage("round_nav_all")?></span></a></li>
-	<?endif?>
-<?endif?>
+
 		</ul>
 		<div style="clear:both"></div>
 	</div>
