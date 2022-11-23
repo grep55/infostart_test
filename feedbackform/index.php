@@ -93,9 +93,9 @@ $nav->allowAllRecords(true)
 
 $filters = [];
 
-if (empty($_GET['UF_DATE']) && empty($_GET['UF_FIO']))
+if ((empty($_GET['UF_DATE']) && empty($_GET['UF_FIO'])) || ($_GET['UF_DATE'] === 'none' && $_GET['UF_FIO'] === 'none'))
 {
-    $filters['UF_DATE'] = 'ASC';
+    $filters['UF_DATE'] = 'DESC';
 }
 else
 {
